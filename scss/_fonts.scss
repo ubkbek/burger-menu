@@ -1,32 +1,26 @@
 @font-face {
-    font-family: 'Barlow';
+    font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/barlow-v5-latin-regular.woff2') format('woff2'),
-    url('../fonts/barlow-v5-latin-regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'Barlow';
+    src: url('../fonts/jost-v12-latin-regular.woff2') format('woff2'),
+         url('../fonts/jost-v12-latin-regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../fonts/jost-v12-latin-500.woff2') format('woff2'),
+         url('../fonts/jost-v12-latin-500.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Jost';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('../fonts/barlow-v5-latin-700.woff2') format('woff2'),
-    url('../fonts/barlow-v5-latin-700.woff') format('woff');
-}
-@font-face {
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('../fonts/fraunces-v10-latin-regular.woff2') format('woff2'),
-    url('../fonts/fraunces-v10-latin-regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'Fraunces';
-    font-style: normal;
-    font-weight: 900;
-    font-display: swap;
-    src: url('../fonts/fraunces-v10-latin-900.woff2') format('woff2'),
-    url('../fonts/fraunces-v10-latin-900.woff') format('woff');
-}
+    src: url('../fonts/jost-v12-latin-700.woff2') format('woff2'),
+         url('../fonts/jost-v12-latin-700.woff') format('woff');
+  }

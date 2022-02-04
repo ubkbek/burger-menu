@@ -1,0 +1,109 @@
+.header {
+    padding: 40px;
+    background-color: lightblue;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-link {
+        display: inline-block;
+    }
+
+    &__logo-img {
+        width: 196px;
+        height: 24px;
+    }
+
+    &__nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav-item + &__nav-item {
+        margin-left: 42px;
+    }
+
+    &__nav-link {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px;
+    }
+
+    &__btn {
+        border: none;
+        background: none;
+        display: none;
+    }
+
+    &__burger-img {
+        width: 24px;
+        height: 20px;
+    }
+
+    &__close-img {
+        width: 20px;
+        height: 20px;
+        display: none;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .header {
+        padding: 30px;
+        position: relative;
+
+        &__nav {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: #f0808050;
+            display: none;
+        }
+
+        &--active &__nav{
+            display: block;
+        }
+
+        &__nav-list {
+            width: 70vw;
+            height: 100vh;
+            background-color: #333;
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 48px 24px;
+        }
+
+        &__nav-item + &__nav-item {
+            margin-left: 0;
+            margin-top: 32px;
+        }
+
+        &__nav-link {
+            font-size: 24px;
+            line-height: 25px;
+            color: #fff;
+        }
+
+        &__btn {
+            display: block;
+        }
+
+        &--active &__burger-img {
+            display: none;
+        }
+
+        &--active &__close-img {
+            display: block;
+        }
+    }
+}
